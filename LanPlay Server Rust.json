@@ -1,0 +1,31 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2022-09-01T14:13:51+02:00",
+    "name": "LanPlay Server Rust",
+    "author": "admin@erdbeerbaerlp.de",
+    "description": "Sets up an LAN-Play server compatible with http:\/\/www.lan-play.com\/ clients.\r\n\r\nUses https:\/\/github.com\/spacemeowx2\/slp-server-rust",
+    "features": null,
+    "docker_images": {
+        "spacemeowx2\/slp-server-rust": "spacemeowx2\/slp-server-rust"
+    },
+    "file_denylist": [],
+    "startup": "cargo run --release",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"Listening on\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": null,
+            "container": "debian:buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": []
+}
